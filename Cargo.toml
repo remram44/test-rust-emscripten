@@ -1,0 +1,12 @@
+[package]
+name = "thetest"
+version = "0.1.0"
+authors = ["Remi Rampin <remirampin@gmail.com>"]
+license = "BSD-3-Clause"
+
+[[bin]]
+name = "client"
+path = "src/main.rs"
+
+[target.'cfg(target_os = "emscripten")'.dependencies]
+emscripten-sys = "0.3"
